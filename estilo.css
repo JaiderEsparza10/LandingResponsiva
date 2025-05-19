@@ -1,0 +1,249 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    display: inline-block;
+    height: 70px;
+    align-items: center;
+    width: 100%;
+}
+
+.izquierda {
+    display: inline-block;
+}
+.izquierda img{
+    height: 50px;
+    margin-left: 200px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 25px;
+}
+
+.nombre-empresa{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 5px;
+    margin-top: 60px;
+    margin-left: 2px;
+    font-size: 30px;
+}
+
+.derecha{
+    float: right;
+    line-height: 80px;
+    margin-top: 25px;
+    margin-right: 200px;
+}
+
+.derecha a {
+    float: left;
+    text-decoration: none;
+    padding-right: 2px;
+    margin-right: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(173, 173, 173);
+    font-size: 20px;
+    padding: 0;
+    margin-top: 0;
+
+}
+
+#boton-navegacion{
+
+    background-color: rgb(0, 153, 255);
+    display: block;
+    color: white;
+    border-radius: 30px;
+    padding: 4px 20px;
+}
+
+/*CONTENIDO PAGINA*/
+.Contenido{
+    margin-left: 200px;
+    margin-top: 300px;
+}
+
+.Contenido h1{
+    font-size: 50px;
+    display: block;
+    font-weight: bold;
+}
+
+.texto-inferior{
+    margin-top: -20px;
+}
+
+.Contenido p{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(173, 173, 173);
+}
+
+.parrafo-inferior{
+    margin-bottom: 60px;
+}
+
+.boton-start{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(86, 188, 252);
+    line-height: 20px;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+
+div .imagen-persona{
+    height: 600px;
+    float: right;
+    margin-top: -420px;
+    margin-right: 150px;
+}
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .izquierda img,
+    .nombre-empresa {
+        margin-top: 15px;
+        margin-left: 25px;
+        font-size: 24px;
+    }
+
+    .derecha {
+        float: none;
+        text-align: center;
+        margin: 10px 0;
+        clear: both;
+    }
+
+    .derecha a {
+        float: none;
+        display: inline-block;
+        margin: 5px 10px;
+        font-size: 30px;
+    }
+
+    #boton-navegacion {
+        display: block;
+        width: 30%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    /* Contenido */
+    .Contenido {
+        margin-left: 30px;
+        margin-top: 150px;
+    }
+
+    .Contenido h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .texto-inferior {
+        margin-top: -10px;
+    }
+
+    .Contenido p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .boton-start{
+        display: block;
+        text-align: center;
+        width: 30%;
+        margin: 0 auto;
+        margin-left: 200px;
+    }
+
+    div .imagen-persona {
+        display: block;
+        margin: 80px auto 0 auto; /* Baja la imagen 80px por debajo del botón */
+        max-width: 80%;
+        width: 100%;
+        height: auto;
+        margin-right: 50px;
+    }
+
+    div.imagen-persona img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* -------------------------------
+Media Query para Móviles
+------------------------------- */
+@media (max-width: 480px) {
+
+    /* Header */
+    .izquierda img,
+    .nombre-empresa {
+        margin-top: 10px;
+        margin-left: 15px;
+        font-size: 22px;
+    }
+
+    .derecha {
+        text-align: center;
+        margin: 8px 0;
+        display: inline;
+        display: block;
+    }
+
+    .derecha a {
+        display: inline;
+        margin: 2px 0;
+        font-size: 19px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    #boton-navegacion {
+        display: block;
+        width: 30%;
+        margin: 10px auto;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* Contenido */
+    .Contenido {
+        margin-left: 15px;
+        margin-top: 100px;
+        padding-right: 15px;
+    }
+
+    .Contenido h1 {
+        font-size: 30px;
+    }
+
+    .texto-inferior {
+        margin-top: -3px;
+    }
+
+    .Contenido p {
+        font-size: 18px;
+    }
+
+    .boton-start{
+        display: block;
+        font-size: 12px;
+        margin-left: 90px;
+    }
+
+    div .imagen-persona {
+        float: none;
+        margin: 20px auto;
+        height: auto;
+        max-width: 80%;
+        margin-top: 50px;
+    }
+}
